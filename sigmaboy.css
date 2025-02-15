@@ -5,7 +5,7 @@
     border: 10px solid black;
     margin-left: 25vw;
     width: calc(50vw + 20px);
-    border-radius: 2.5vh;
+    border-radius: 2.5vw;
     background-color: white;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .tarolo div {
-    border-radius: 1.5vh;
+    border-radius: 1.5vw;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -197,27 +197,47 @@ body {
     }
 
     #div2 {
-        grid-column: 4/ 6;
+        grid-column: 4 / 6;
         grid-row: 4 / 5;
     }
     #div3 {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 4;
-        grid-row-end: 6;
+        grid-column: 1 / 4;
+        grid-row: 4 / 6; 
     }
 
     #div4 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 4;
+        grid-column: 4 / 6;
+        grid-row: 1 / 4;
     }
 
     #div5 {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 4;
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #div1 {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3
+    }
+
+    #div2 {
+        grid-column: 3 / 3;
+        grid-row: 5 / 5;
+    }
+    #div3 {
+        grid-column: 1 / 1;
+        grid-row: 5 / 5; 
+    }
+
+    #div4 {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    #div5 {
+        grid-column: 5 / 5;
+        grid-row: 2 / 2;
     }
 }
